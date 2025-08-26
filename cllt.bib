@@ -239,6 +239,27 @@
     abstract = "In this paper, we examine how large language models (LLMs) solve multi-step problems under a language agent framework with three components: a generator, a discriminator, and a planning method. We investigate the practical utility of two advanced planning methods, iterative correction and tree search. We present a comprehensive analysis of how discrimination accuracy affects the overall performance of agents when using these two methods or a simpler method, re-ranking. Experiments on two tasks, text-to-SQL parsing and mathematical reasoning, show that: (1) advanced planning methods demand discriminators with at least 90{\%} accuracy to achieve significant improvements over re-ranking; (2) current LLMs{'} discrimination abilities have not met the needs of advanced planning methods to achieve such improvements; (3) with LLM-based discriminators, advanced planning methods may not adequately balance accuracy and efficiency. For example, compared to the other two methods, tree search is at least 10{--}20 times slower but leads to negligible performance gains, which hinders its real-world applications.",
 }
 
+@inproceedings{clark-etal-2025-linear,
+    title = "Linear Recency Bias During Training Improves Transformers' Fit to Reading Times",
+    author = "Clark, Christian  and
+      Oh, Byung-Doh  and
+      Schuler, William",
+    editor = "Rambow, Owen  and
+      Wanner, Leo  and
+      Apidianaki, Marianna  and
+      Al-Khalifa, Hend  and
+      Eugenio, Barbara Di  and
+      Schockaert, Steven",
+    booktitle = "Proceedings of the 31st International Conference on Computational Linguistics",
+    month = jan,
+    year = "2025",
+    address = "Abu Dhabi, UAE",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.coling-main.517/",
+    pages = "7735--7747",
+    abstract = "Recent psycholinguistic research has compared human reading times to surprisal estimates from language models to study the factors shaping human sentence processing difficulty. Previous studies have shown a strong fit between surprisal values from Transformers and reading times. However, standard Transformers work with a lossless representation of the entire previous linguistic context, unlike models of human language processing that include memory decay. To bridge this gap, this paper evaluates a modification of the Transformer model that uses ALiBi (Press et al., 2022), a recency bias added to attention scores. Surprisal estimates from a Transformer that includes ALiBi during training and inference show an improved fit to human reading times compared to a standard Transformer baseline. A subsequent analysis of attention heads suggests that ALiBi{'}s mixture of slopes{---}which determine the rate of memory decay in each attention head{---}may play a role in the improvement by helping models with ALiBi to track different kinds of linguistic dependencies."
+}
+
 @inproceedings{clark-schuler-2023-categorial,
     title = "Categorial grammar induction from raw data",
     author = "Clark, Christian  and
